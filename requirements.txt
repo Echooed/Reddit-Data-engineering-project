@@ -28,6 +28,7 @@ click==8.1.8
 clickclick==20.10.2
 colorama==0.4.6
 colorlog==6.9.0
+configparser==7.1.0
 ConfigUpdater==3.2
 connexion==2.14.2
 cron-descriptor==1.4.5
@@ -80,7 +81,7 @@ mdurl==0.1.2
 methodtools==0.4.7
 more-itertools==10.6.0
 multidict==6.1.0
-numpy==1.26.4
+numpy==2.2.3
 opentelemetry-api==1.30.0
 opentelemetry-exporter-otlp==1.30.0
 opentelemetry-exporter-otlp-proto-common==1.30.0
