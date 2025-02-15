@@ -2,11 +2,13 @@ import os
 import sys
 from datetime import datetime
 from airflow import DAG
+
 from airflow.operators.python import PythonOperator
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from reddit_pipeline import reddit_pipeline
 from upload_s3_pipeline import upload_s3_pipeline
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 default_args = {
     'owner': 'Michael Akindele',
