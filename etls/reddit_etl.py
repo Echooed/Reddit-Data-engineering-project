@@ -1,8 +1,13 @@
+import pandas as pd
+import numpy as np
 import praw
 from praw import Reddit
 import sys
+import os
 
-#import predefined post fields from a constants directory
+# Add the project root directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from utils.constants import POST_FIELDS
 
 #connect to reddit API using praw

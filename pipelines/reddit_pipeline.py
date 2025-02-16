@@ -1,6 +1,12 @@
 import pandas as pd
+import sys
+import os
+
+# Add project root directory to Python's path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from etls.reddit_etl import connect_reddit, extract_posts, load_data_to_csv
-from utils.constants import CLIENT_ID, SECRET, OUTPUT_PATH
+
 
 def reddit_pipeline(file_name: str, subreddit: str, time_filter='day', limit=None) -> str:
     """
